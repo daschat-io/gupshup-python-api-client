@@ -1,5 +1,5 @@
 import click
-from dumpit import pdumpit
+#from dumpit import pdumpit
 from aenum import MultiValueEnum
 
 
@@ -30,10 +30,10 @@ class QueryParams(MultiValueEnum):
             param.__doc__ = param.values[1]
 
         click.echo('Default params:')
-        pdumpit(DefaultQueryParams, all_=False)
+        #pdumpit(DefaultQueryParams, all_=False)
 
         for param in cls:
             param.__doc__ = param.values[1]
 
         click.echo('{} params:'.format(cls.__name__))
-        pdumpit(cls, all_=False)
+        #pdumpit(cls, all_=False)
