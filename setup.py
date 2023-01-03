@@ -36,7 +36,7 @@ setup(
         'click>=7.0',
         'requests>=2.20.0',
         'aenum>=2.1.2',
-        'ujson==2.0.1',
+        'ujson>=2.0.1',
         'curlify==2.2.1'
     ],
 
